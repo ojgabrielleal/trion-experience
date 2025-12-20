@@ -4,6 +4,7 @@
     --bg-dark: #050512;
     --bg-dark-secondary: #0a0a1f;
     --bg-dark-tertiary: #0f0a2e;
+    --bg-blue-dark: #0a0e27;
     --white-primary: #ededed;
     --white-secondary: #bfbfbf;
     --accent: #ffffff;
@@ -18,23 +19,9 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+    background: var(--bg-blue-dark);
     position: relative;
     overflow-x: hidden;
-}
-
-body::before{
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, var(--bg-dark-secondary) 0%, var(--bg-dark-tertiary) 100%);
-    opacity: 0;
-    animation: backgroundShift 20s ease-in-out infinite;
-    pointer-events: none;
-    z-index: -1;
 }
 
 .container{
