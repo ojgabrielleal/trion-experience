@@ -5,6 +5,7 @@
     --bg-dark-secondary: #0a0a1f;
     --bg-dark-tertiary: #0f0a2e;
     --bg-blue-dark: #0a0e27;
+    --bg-purple-dark: #1a0a2e;
     --white-primary: #ededed;
     --white-secondary: #bfbfbf;
     --accent: #ffffff;
@@ -19,7 +20,7 @@
 
 body{
     min-height: 100vh;
-    background: var(--bg-blue-dark);
+    background: linear-gradient(180deg, var(--bg-blue-dark) 0%, var(--bg-purple-dark) 100%);
     position: relative;
     overflow-x: hidden;
 }
